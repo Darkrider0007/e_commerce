@@ -12,12 +12,10 @@ function Page() {
         console.log(email, password);
     }
 
-
-
-
     const handleShow = () => {
         setShow(!show)
     }
+
     return (
         <>
             <div className='min-h-screen '>

@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Heading from '~/components/Heading/Heading'
+import axios from 'axios';
 
 function Page() {
   const [show, setShow] = useState(true)
@@ -8,7 +9,7 @@ function Page() {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     console.log(name, email, password);
   }
