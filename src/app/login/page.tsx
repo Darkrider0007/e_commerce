@@ -7,10 +7,12 @@ function Page() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault()
-        console.log(email, password)
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        e.preventDefault();
+        console.log(email, password);
     }
+
+
 
 
     const handleShow = () => {
